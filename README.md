@@ -1,5 +1,5 @@
-- [vue-single-page-template](#vue-single-page-template)
-  - [前端开发环境配置](#%E5%89%8D%E7%AB%AF%08%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
+- [vue-single](#vue-single)
+  - [前端开发环境配置](#%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
   - [开发及编译](#%E5%BC%80%E5%8F%91%E5%8F%8A%E7%BC%96%E8%AF%91)
   - [代码风格](#%E4%BB%A3%E7%A0%81%E9%A3%8E%E6%A0%BC)
   - [命名规范](#%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83)
@@ -13,10 +13,10 @@
   - [TIPS](#tips)
     - [webpack 2 tree-shaking](#webpack-2-tree-shaking)
 
-# vue-single-page-template
-vue 单页面应用模板
+# vue-single
+vue2 单页面应用模板，基于 [官方](https://www.npmjs.com/package/vue-cli) 略作修改
 
-## 前端开发环境配置
+## 前端开发环境配置
 [快速进入开发阶段](./docs/FE-ENV.md)
 
 ## 开发及编译
@@ -32,7 +32,7 @@ npn run dev
 # 编译
 npm run build
 
-# 编译上 cdn，请先在 ./config/publicPath.js 中添加相应地址
+# 编译上 cdn，请先在 ./config/publicPath.js 中添加相应地址
 # 线上 cdn
 npm run build --cdn
 # 测试 cdn
@@ -55,10 +55,10 @@ npm run build --cdn-t
 [css 命名](./docs/name-css.md)
 
 ## service 文档
-- 接口请求 [ajax](./docs/service/ajax.md)
-- 弹框 [layer](./docs/service/layer.md)
-- rem 布局 [rem](./docs/service/rem.md)
-- 表单校验 [validate](./docs/service/validate.md)
+- [ajax 请求](./docs/service/ajax.md)
+- [layer 弹框](./docs/service/layer.md)
+- [rem 布局](./docs/service/rem.md)
+- [表单校验](./docs/service/validate.md)
 
 ---
 
@@ -117,6 +117,6 @@ export {
   addButton
 }
 ```
+参考  
 [今天，你升级Webpack2了吗？](http://www.aliued.com/?p=4060)  
 [【译】如何在 Webpack 2 中使用 tree-shaking](https://juejin.im/post/599bc13b6fb9a024a370f4ec)
-# vue-single

@@ -1,4 +1,4 @@
-- [前端开发环境配置](#%E5%89%8D%E7%AB%AF%08%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
+- [前端开发环境配置](#%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
   - [安装 node](#%E5%AE%89%E8%A3%85-node)
   - [安装 cnpm](#%E5%AE%89%E8%A3%85-cnpm)
   - [安装 chrome 代理插件(推荐)](#%E5%AE%89%E8%A3%85-chrome-%E4%BB%A3%E7%90%86%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90)
@@ -6,7 +6,7 @@
     - [插件安装](#%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85)
     - [插件介绍](#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D)
 
-# 前端开发环境配置
+# 前端开发环境配置
 
 ## 安装 node
 使用 [nvm](https://github.com/creationix/nvm) 进行版本管理  
@@ -42,14 +42,14 @@ nvm alias default 6.11.4
 ```
 
 ## 安装 cnpm
-[淘宝 NPM 镜像](http://npm.taobao.org/)，加快依赖包安装速度，之后统一使用 `cnpm` 命令
+[淘宝 NPM 镜像](http://npm.taobao.org/)，加快依赖包安装速度，之后统一使用 `cnpm` 命令
 
 ```bash
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 ## 安装 chrome 代理插件(推荐)
-> 小飞机全局代理后，node 本地开发服务器会挂掉
+> 小飞机全局代理后，node 本地开发服务器会挂掉
 
 1. 安装 [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon)
 
@@ -60,7 +60,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 ## 安装 [vscode](https://code.visualstudio.com/)(推荐)
 
 ### 插件安装
-1. 安装 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 插件
+1. 安装 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 插件
 2. `cmd + shift + p` 唤起 `vscode` 命令面板
 3. 输入 `sync`，选择 `download`
 4. 此时会打开 `github`，需要创建 `Personal Access Token`，见插件官网
@@ -81,12 +81,12 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 统一 `vscode` 编辑器配置，如空格，换行等，配置文件 `.editorconfig`
 
 - file utils  
-文件操作，删除，副本，移动等
+文件操作，删除，添加副本，移动等
 
 - git history  
 `git` 历史，可查看某一文件的历史，并对比不同版本等
 
-- JavaScript Standard Style  
+- JavaScript Standard Style  
 `standard` 风格插件
 
 - JavaScript standardjs styled snippets  
@@ -99,7 +99,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 浏览器中打开 `html`
 
 - path intellisense  
-文件路径提示
+文件路径提示
 
 - predawn theme kit  
 `vsocde` 主题
@@ -114,7 +114,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 添加 `.todo` 文件支持
 
 - todo parser  
-解析项目中带有 `todo` 字段的文件
+解析项目中带有 `todo` 字段的文件
 
 - vetur  
 `Vue` 代码高亮，代码提示等

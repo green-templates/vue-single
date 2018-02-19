@@ -33,7 +33,7 @@ rem.init(canScale)
 | -------- | --------- | ---- | ------------------------------------------------------------------------------------------------------------------------------ | ---- |
 | canScale | `Boolean` | 否   | 是否设置 `initial-scale` 使用 `dpr` 缩放，默认 `true` <br> 能解决 `1px` 问题，不影响布局 <br> 部分 `Android` 需要开启 `settings.setUseWideViewPort(true)` |     |
 
-## js 方法
+## js 方法
 在 `js` 中使用 `rem`
 ```js
 // @returns {Number} rem 数值，需要自己加 'rem'
