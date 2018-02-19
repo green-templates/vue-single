@@ -1,0 +1,217 @@
+@import './_variable.scss';
+@import './rem.scss';
+
+/* placeholder
+   ========================================================================== */
+
+// float
+%clearfix {
+  zoom: 1;
+  &:after {
+    @extend %cont;
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+    font-size: 0;
+  }
+}
+
+%fl {
+  float: left;
+}
+
+%fr {
+  float: right;
+}
+
+// text-align
+%tac {
+  text-align: center;
+}
+
+%tal {
+  text-align: left;
+}
+
+%tar {
+  text-align: right;
+}
+
+// background
+%bg-white {
+  background: $c-white;
+}
+
+%bgr-no {
+  background-repeat: no-repeat;
+}
+
+%bgs-full {
+  background-size: 100%;
+}
+
+%bgp-ct {
+  background-position: center top;
+}
+
+%bgp-cc {
+  background-position: center center;
+}
+
+%bgp-cl {
+  background-position: center left;
+}
+
+// position
+%dir-lr {
+  left: 0;
+  right: 0;
+}
+
+%dir-tb {
+  top: 0;
+  bottom: 0;
+}
+
+%pos-a {
+  position: absolute;
+}
+
+%pos-r {
+  position: relative;
+}
+
+%pos-cc {
+  @extend %pos-a;
+  @extend %dir-lr;
+  @extend %dir-tb;
+  @extend %mg-auto;
+}
+
+%pos-lc {
+  @extend %pos-a;
+  @extend %dir-tb;
+  @extend %mg-auto;
+  left: 0;
+}
+
+%cont {
+  content: '';
+}
+
+// display
+%dn {
+  display: none;
+}
+
+%db {
+  display: block;
+}
+
+%dib {
+  display: inline-block;
+}
+
+%tb-full {
+  width: 100%;
+  display: table;
+}
+
+%tb-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+// other
+%font-family {
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+}
+
+%fw-n {
+  font-weight: normal;
+}
+
+%li-no {
+  list-style: none;
+}
+
+%mg-auto {
+  margin: auto;
+}
+
+%mb-sm {
+  margin-bottom: $s-sm !important;
+}
+
+%ov-h {
+  overflow: hidden;
+}
+
+%wh-full {
+  width: 100%;
+  height: 100%;
+}
+
+%bdrs-circle {
+  border-radius: 50%;
+}
+
+%bdrs-base {
+  border-radius: rem(10);
+}
+
+%bdrs-full {
+  border-radius: rem(200);
+}
+
+%border-none {
+  border: none !important;
+}
+
+%cur-p {
+  cursor: pointer;
+}
+
+%box-bb {
+  box-sizing: border-box;
+}
+
+%toe {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+// X 按钮
+%x-close {
+  width: rem(40);
+  height: rem(40);
+  position: absolute;
+  &:before,
+  &:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #bbb;
+    position: absolute;
+    top: rem(20);
+    left: 0;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+// 箭头
+%arrow {
+  width: rem(10);
+  height: rem(10);
+  border-right: 1px solid $c-gray-light;
+  border-top: 1px solid $c-gray-light;
+  transform: rotate(45deg);
+  display: inline-block;
+}
