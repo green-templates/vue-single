@@ -23,8 +23,8 @@ vue2 单页面应用模板，基于 [官方](https://www.npmjs.com/package/vue-c
 安装 [libpng](https://www.npmjs.com/package/image-webpack-loader#libpng-issues)
 
 ```bash
-# 安装依赖包，使用 cnpm
-cnpm install
+# 安装依赖包
+yarn/npm/cnpm install
 
 # 启动开发服务
 npn run dev
@@ -77,7 +77,7 @@ npm run build --cdn-t
 ### 图片压缩
 使用 `webpack-image-loader`，需要安装 [libpng](https://www.npmjs.com/package/image-webpack-loader#libpng-issues)
 
-```zsh
+```bash
 # error
 Module build failed: Error: dyld: Library not loaded: /usr/local/opt/libpng/lib/libpng16.16.dylib
 ```

@@ -44,7 +44,7 @@
 </template>
 ```
 
-## 其他文件
+## others
 `.js` 文件以 `驼峰` 命名，`构造函数` 以 `帕斯卡` 命名  
 ```js
 // tool.js
@@ -54,7 +54,7 @@
 
 `图片` `.scss` 等以 `-` 连接
 ```js
+// btn.scss
 // banner.png
 // user-logo.png
-// rem.scss
 ```

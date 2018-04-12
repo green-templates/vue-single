@@ -1,8 +1,8 @@
 - [前端开发环境配置](#%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)
   - [安装 node](#%E5%AE%89%E8%A3%85-node)
   - [安装 cnpm](#%E5%AE%89%E8%A3%85-cnpm)
-  - [安装 chrome 代理插件(推荐)](#%E5%AE%89%E8%A3%85-chrome-%E4%BB%A3%E7%90%86%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90)
-  - [安装 [vscode](https://code.visualstudio.com/)(推荐)](#%E5%AE%89%E8%A3%85-vscodehttpscodevisualstudiocom%E6%8E%A8%E8%8D%90)
+  - [安装 chrome 代理插件 (推荐)](#%E5%AE%89%E8%A3%85-chrome-%E4%BB%A3%E7%90%86%E6%8F%92%E4%BB%B6-%E6%8E%A8%E8%8D%90)
+  - [安装 vscode (推荐)](#%E5%AE%89%E8%A3%85-vscode-%E6%8E%A8%E8%8D%90)
     - [插件安装](#%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85)
     - [插件介绍](#%E6%8F%92%E4%BB%B6%E4%BB%8B%E7%BB%8D)
 
@@ -12,7 +12,7 @@
 使用 [nvm](https://github.com/creationix/nvm) 进行版本管理  
 参考 https://www.cnblogs.com/kaiye/p/4937191.html
 
-1.卸载已安装到全局的 node/npm，没有可跳过
+1. 卸载已安装到全局的 node/npm，没有可跳过
 ```bash
 # 查看已经安装在全局的模块，以便删除这些全局模块后再按照不同的 node 版本重新进行全局安装
 npm ls -g --depth=0
@@ -27,18 +27,18 @@ sudo rm /usr/local/bin/node
 cd  /usr/local/bin && ls -l | grep "../lib/node_modules/" | awk '{print $9}'| xargs rm
 ```
 
-2.安装 [nvm](https://github.com/creationix/nvm#installation)
+2. 安装 [nvm](https://github.com/creationix/nvm#installation)
 
-3.`nvm` 安装 `node` 对应版本
+3. `nvm` 安装 `node` 对应版本
 ```bash
 # 安装对应版本
-nvm install 6.11.4
+nvm install 8.11.1
 
 # 使用对应版本
-nvm use 6.11.4
+nvm use 8.11.1
 
 # 设置默认版本，保持新建终端窗口后版本一致
-nvm alias default 6.11.4
+nvm alias default 8.11.1
 ```
 
 ## 安装 cnpm
@@ -48,7 +48,7 @@ nvm alias default 6.11.4
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
-## 安装 chrome 代理插件(推荐)
+## 安装 chrome 代理插件 (推荐)
 > 小飞机全局代理后，node 本地开发服务器会挂掉
 
 1. 安装 [Proxy SwitchyOmega](https://chrome.google.com/webstore/detail/proxy-switchyomega/padekgcemlokbadohgkifijomclgjgif?utm_source=chrome-ntp-icon)
@@ -57,7 +57,7 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 3. 插件模式选择 `pac`
 
-## 安装 [vscode](https://code.visualstudio.com/)(推荐)
+## 安装 [vscode](https://code.visualstudio.com/) (推荐)
 
 ### 插件安装
 1. 安装 [Settings Sync](https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync) 插件
