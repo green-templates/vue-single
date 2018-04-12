@@ -1,18 +1,7 @@
-// const isOnline = tool.env.isOnline()
-const isOnline = false
-
 const list = {
   path: '/list',
   meta: '项目路由',
-  component: () =>
-    import(/* webpackChunkName: "./pages/list" */ '../pages/list')
-}
-
-const test = {
-  path: '/test',
-  meta: '测试',
-  component: () =>
-      import(/* webpackChunkName: "./pages/test" */ '../pages/test')
+  component: () => import(/* webpackChunkName: "./pages/list" */ '../pages/list')
 }
 
 const other = [
@@ -26,9 +15,6 @@ const other = [
   // }
 ]
 
-// 线上不显示的路由
-if (!isOnline) {
-  other.unshift(list, test)
-}
+other.unshift(list)
 
 export default other
