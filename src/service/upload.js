@@ -1,4 +1,4 @@
-import * as tool from './tool'
+import * as utils from './utils'
 import * as tcheck from './tcheck'
 import InitAjax from './ajax/InitAjax'
 
@@ -16,7 +16,7 @@ export default {
 
     if (files && files.length > 0) {
       file = files[0]
-      tool.logger(file)
+      utils.logger(file)
       // 限制 20 MB
       const limit = 20000000
       const fileSize = file.size

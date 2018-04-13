@@ -1,5 +1,5 @@
 import layer from '../layer'
-import * as tool from '../tool'
+import * as utils from '../utils'
 
 const POST = 'post'
 let method, lid
@@ -10,7 +10,7 @@ let method, lid
  * @param {Number} config.loading loading '../layer.js:214'
  */
 const loading = (config) => {
-  // tool.logger(config)
+  // utils.logger(config)
   const type = config.method === POST ? 4 : 3
   return config.loading || type
 }
@@ -20,10 +20,10 @@ const loading = (config) => {
  * @param {Object} error
  */
 const errHandle = (error) => {
-  // tool.logger('Response', error.response)
-  // tool.logger('Request', error.request)
-  // tool.logger('Error', error.message)
-  // tool.logger('Config', error.config)
+  // utils.logger('Response', error.response)
+  // utils.logger('Request', error.request)
+  // utils.logger('Error', error.message)
+  // utils.logger('Config', error.config)
 
   const errMsg = error.message.indexOf('timeout') > -1 ? '请求超时' : '网络错误'
 
@@ -58,7 +58,7 @@ export default (instance) => { /* 添加请求拦截器 */
   /* 添加响应拦截器 */
   instance.interceptors.response.use((res) => {
     /* 对响应数据做些事 */
-    tool.logger(res)
+    utils.logger(res)
     layer.closeAll()
 
     return res.data

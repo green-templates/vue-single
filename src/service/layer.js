@@ -1,5 +1,5 @@
 /* eslint-disable */
-import * as tool from './tool'
+import * as utils from './utils'
 
 
 /*!
@@ -220,7 +220,7 @@ var custom = {
     })
   },
   toast(msg, option) {
-    return layer.open(tool.merge({
+    return layer.open(utils.merge({
       skin: 'msg',
       content: msg || '',
       time: 2
@@ -239,7 +239,7 @@ var custom = {
    * })
    */
   warning(msg, option) {
-    return layer.open(tool.merge({
+    return layer.open(utils.merge({
       shadeClose: false,
       content: msg || '',
       btn: ['确定']
@@ -251,7 +251,7 @@ var custom = {
    * @param {Object} option 参数选项
    */
   confirm(msg, option) {
-    return layer.open(tool.merge({
+    return layer.open(utils.merge({
       shadeClose: false,
       content: msg || '',
       btn: ['确定', '取消']
@@ -259,6 +259,6 @@ var custom = {
   }
 }
 
-layer = tool.merge(layer, custom)
+layer = utils.merge(layer, custom)
 
 export default layer

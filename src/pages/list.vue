@@ -30,7 +30,7 @@
 import {
   routeData
 } from '../router'
-import * as tool from '../service/tool'
+import * as utils from '../service/utils'
 
 export default {
   data () {
@@ -54,7 +54,7 @@ export default {
 
     this.width = docEl.getBoundingClientRect().width || docEl.clientWidth
     this.height = window.innerHeight
-    this.viewport = tool.$('meta[name=viewport]').content
+    this.viewport = utils.$('meta[name=viewport]').content
   }
 }
 </script>

@@ -47,7 +47,7 @@
 ## others
 `.js` 文件以 `驼峰` 命名，`构造函数` 以 `帕斯卡` 命名  
 ```js
-// tool.js
+// utils.js
 // postError.js
 // InitAjax.js
 ```

@@ -3,6 +3,20 @@ import * as tcheck from './tcheck'
 const root = document.documentElement
 
 /**
+ * 客户端 API
+ */
+const userAgent = window.navigator.userAgent.toLowerCase()
+
+// 判断微信
+export const isWeiXin = /micromessenger/.test(userAgent)
+
+// 判断安卓
+export const isAndroid = /andriod|linux/.test(userAgent)
+
+// 判断iOS
+export const isIOS = /iphone|ipad/.test(userAgent)
+
+/**
  * 环境判断
  */
 export const env = {
@@ -97,7 +111,8 @@ function isArrObj (i) {
   return tcheck.isArray(i) || tcheck.isObject(i)
 }
 export function merge (obj1, obj2) {
-  const arr = obj1 === true ? Array.prototype.slice.call(arguments, 1) : Array.prototype.slice.call(arguments)
+  const arr =
+    obj1 === true ? Array.prototype.slice.call(arguments, 1) : Array.prototype.slice.call(arguments)
 
   let obj = {}
   let i = 0

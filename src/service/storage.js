@@ -62,9 +62,10 @@ export const cookie = {
    * @returns {String} value cookie 值
    */
   get (name) {
-    let arr
     const reg = new RegExp('(^| )' + name + '=([^;]*)(;|$)')
-    if (arr = document.cookie.match(reg)) {
+    const arr = document.cookie.match(reg)
+
+    if (arr) {
       return unescape(arr[2])
     } else {
       return ''

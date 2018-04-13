@@ -1,4 +1,4 @@
-import * as tool from './tool'
+import * as utils from './utils'
 import * as jsbridge from './jsbridge'
 
 const errType = {
@@ -30,8 +30,8 @@ export function postError (type, err = {
     stack: err.stack
   }
 
-  if (info) data = tool.merge(info, data)
-  if (!tool.env.isOnline()) {
+  if (info) data = utils.merge(info, data)
+  if (!utils.env.isOnline()) {
     console.warn(type)
     console.warn(data)
   }
@@ -42,7 +42,7 @@ export function postError (type, err = {
     }
   }
 
-  if (!tool.env.isDev()) {
+  if (!utils.env.isDev()) {
     window.ajax.post('', {
       type,
       data: JSON.stringify(data)

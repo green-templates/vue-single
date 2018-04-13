@@ -95,7 +95,9 @@
     "not ie <= 8"
   ],
   "standard": {
-    "plugins": ["html"],
+    "plugins": [
+      "html"
+    ],
     "parser": "babel-eslint",
     "ignore": [
       "node_modules/**"

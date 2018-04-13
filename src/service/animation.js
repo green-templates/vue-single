@@ -1,4 +1,4 @@
-import * as tool from './tool'
+import * as utils from './utils'
 
 function getTransforms (translate3d) {
   return {
@@ -21,5 +21,5 @@ export function translate (el, {
 }) {
   const translate3d = `translate3d(${x}, ${y}, ${z})`
   const transforms = getTransforms(translate3d)
-  tool.setCSS(el, transforms)
+  utils.setCSS(el, transforms)
 }

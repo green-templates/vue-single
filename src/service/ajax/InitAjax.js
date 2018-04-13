@@ -2,7 +2,7 @@ import axios from 'axios'
 // using application/x-www-form-urlencoded
 // https://github.com/mzabriskie/axios#using-applicationx-www-form-urlencoded-format
 import qs from 'qs'
-import * as tool from '../tool'
+import * as utils from '../utils'
 
 import setGlobal from './_global'
 import setOption from './_self'
@@ -34,7 +34,7 @@ const defaults = {
  */
 class InitAjax {
   constructor (options) {
-    this.options = tool.merge(true, defaults, options)
+    this.options = utils.merge(true, defaults, options)
 
     this.host = setOption.setHost(this.options.host)
 
@@ -49,7 +49,7 @@ class InitAjax {
     return axios.spread
   }
   get (url, params, options) {
-    return this.instance.get(this.host + url, tool.merge({
+    return this.instance.get(this.host + url, utils.merge({
       params
     }, options))
   }
@@ -66,8 +66,8 @@ export default InitAjax
 // a.defaults.headers.a = 1
 // b.defaults.b = 1
 // b.defaults.headers.b = 1
-// tool.logger(a.defaults)
-// tool.logger(b.defaults)
+// utils.logger(a.defaults)
+// utils.logger(b.defaults)
 
 /**
  * ajax.all()

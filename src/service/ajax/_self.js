@@ -1,5 +1,5 @@
 import * as tcheck from '../tcheck'
-import * as tool from '../tool'
+import * as utils from '../utils'
 
 // 各实例不同配置
 export default {
@@ -15,10 +15,10 @@ export default {
   setHost (hosts) {
     let host = ''
 
-    if (hosts && tcheck.isString(hosts) && !tool.env.isOnline()) host = hosts
+    if (hosts && tcheck.isString(hosts) && !utils.env.isOnline()) host = hosts
 
     if (tcheck.isObject(hosts)) {
-      host = tool.env.isOnline() ? hosts.online : hosts.testing
+      host = utils.env.isOnline() ? hosts.online : hosts.testing
     }
 
     return host
@@ -42,9 +42,9 @@ export default {
     }
 
     if (instance) {
-      return tool.merge(instance.defaults, config, options)
+      return utils.merge(instance.defaults, config, options)
     }
 
-    return tool.merge(config, options)
+    return utils.merge(config, options)
   }
 }

@@ -1,4 +1,4 @@
-// const isOnline = tool.env.isOnline()
+// const isOnline = utils.env.isOnline()
 const isOnline = false
 
 const list = {

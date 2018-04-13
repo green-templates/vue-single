@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import * as tool from '../service/tool'
+import * as utils from '../service/utils'
 import Touch from '../service/Touch.js'
 import * as animation from '../service/animation'
 
@@ -49,22 +49,22 @@ export default {
     }
   },
   mounted () {
-    tool.logger('test $$')
-    tool.logger(tool.$$('.btn-bg'))
-    tool.logger('test $')
-    tool.logger(tool.$('.btn-bg'))
+    utils.logger('test $$')
+    utils.logger(utils.$$('.btn-bg'))
+    utils.logger('test $')
+    utils.logger(utils.$('.btn-bg'))
 
     // 640 设计稿设置字体
-    tool.$('#testRem').style.fontSize = window.rem.px2rem(30, 640) + 'rem'
+    utils.$('#testRem').style.fontSize = window.rem.px2rem(30, 640) + 'rem'
 
     this.initDrag()
     this.initSwipe()
   },
   methods: {
     clickOnce () {
-      tool.once(() => {
+      utils.once(() => {
         this.count++
-        tool.logger('test once')
+        utils.logger('test once')
       })
     },
     check () {
