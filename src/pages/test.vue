@@ -124,7 +124,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '../assets/scss/_global.scss';
+@import '../scss/_global.scss';
 
 .page-test {
   min-height: 100%;

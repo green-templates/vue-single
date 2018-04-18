@@ -13,3 +13,7 @@ export default {
   name: 'App'
 }
 </script>
+
+<style lang="sass">
+@import './scss/layout.scss';
+</style>

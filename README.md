@@ -1,5 +1,5 @@
-# 组件库
-用于实现一些组件
+# 函数库
+用于实现一些公共函数
 
 ## 开发及编译
 安装 [libpng](https://www.npmjs.com/package/image-webpack-loader#libpng-issues)

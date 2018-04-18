@@ -7,8 +7,6 @@ import './service'
 import validate from './service/validate'
 import * as regexp from './service/regexp'
 
-import './assets/scss/layout.scss'
-
 validate.setConfig({
   // handleError (err) {
   //   window.layer.tip(err)
