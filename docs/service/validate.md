@@ -121,7 +121,7 @@ const form = {
 Vue.use(validate)
 
 // in .vue
-this.$validate(form, (obj, pass, key) => {
+this.$validate(form, (err, pass, key) => {
   // blablabla...
 })
 ```
